@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #f6e232;
+    --second-color: #2a2929;
+    --white-color:#f2f2f2;
+    --font-size: 18px;
+    --max-width: 1400px;
+    --nav-height: 70px;
+}
+html{
+scroll-behavior: smooth;
+}
+
+::selection{
+    background-color: #f6e232;
+    color: var(--second-color);
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+    background-color: var(--second-color);
+    height: 200vh;
+}
+
+header{
+    display: flex;
+    background-color: var(--main-color);
+    
+}
+.contenedor{
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--max-width);
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+
+}
+.copy,
+.titulos{
+    color: var(--white-color);
+}
+
+header div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav{
+    height: var(--nav-height);
+}
+.contenedor{
+    position: sticky;
+    top: 0;
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+    height: var(--nav-height);
+    position: sticky;
+    top: 0;
+}
+.enlaces{
+    text-decoration: none;
+    margin-left: 20px;
+    color: inherit;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.contenedor-principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contenedor-textos{
+    flex-basis: 45%;
+    margin: 20px;
+    color: var(--white-color);
+}
+.titulos{
+    font-size: 3rem;
+}
+.vh-100{
+    height: calc(100vh - var(--nav-height));
+}
+
+.contenedor-logo{
+    display: block;
+}
+.cta{
+text-decoration: none;
+color: var(--second-color);
+background-color: var(--main-color);
+border-radius: 30px;
+padding: 10px;
+transition: 500ms;
+}
+.cta:hover{
+    transform: scale(1.1);
+}
+.cta--negro{
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+.encabezado{
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+/**-------------------------------NOSOTROS----------------------------**/
+
+.contenedor-nosotros{
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;  
+}
+.clr-negro{
+    background: var(--second-color);
+}
+.clr-amarillo{
+    background: var(--main-color);
+}
+/**-------------------------------SERVICIOS----------------------------**/
+
+#servicios{
+text-align: center;
+}
+
+.cards{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card__item{
+max-width: 350px;
+background: var(--white-color);
+border-radius: 10px;
+text-align: center;
+color: var(--second-color);
+padding: 40px 50px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.card__item--activo{
+    background-color: var(--main-color);
+} /**ben bloque elemento modificados**/
+
+.card__plan{
+    color: var(--second-color);
+    margin-bottom: 20px;
+}
+
+.card__precio{
+font-size: 2rem;
+color: var(--second-color);
+}
+
+.card__caracteristica{
+    padding-bottom: 20px;
+}
+/**---------------------------galeria----------------------------**/
+
+.text-center{
+    text-align: center;
+}
+.galeria{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 8px;
+}
+.img{
+    width: 30%;
+    height: 250px;
+
+}
+
+/**-------------------------CONTACTO-----------------------------**/
+.contacto{
+    width: 45px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.form-group{
+    border-radius: 10px;
+    text-align: center;
+}

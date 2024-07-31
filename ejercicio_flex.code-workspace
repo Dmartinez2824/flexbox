@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "ejercicio_flex",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "../img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ejercicio_flex"
+	}
+}
