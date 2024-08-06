@@ -51,7 +51,6 @@ header div{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 nav{
@@ -182,11 +181,11 @@ color: var(--second-color);
     justify-content:space-evenly;
     gap: 8px;
 }
-.img{
+/** #galeria .img{
     width: 30%;
     height: 250px;
 
-}
+}**/
 
 /**-------------------------CONTACTO-----------------------------**/
 .contacto{

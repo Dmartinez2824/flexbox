@@ -9,36 +9,130 @@
 </head>
 <body>
     <header id="header">
-        <div class="contenedor-nav">
+        <div class="contenedor-nav ">
             <img src="img/logo.png" alt="logo" class="logo">
             <div class="enlaces">
             <a href="#inicio" class="links">Inicio</a>
             <a href="#nosotros" class="links">Nosotros</a>
-            <a href="#" class="links">Servicios</a>
-            <a href="#" class="links">Galeria</a>
-            <a href="#" class="links">Contacto</a>
+            <a href="#servicios" class="links">Servicios</a>
+            <a href="#galeria" class="links">Galeria</a>
+            <a href="#contacto" class="links">Contacto</a>
             </div>
         </div>
     </header>
     <div id="sections">
 
         <section id="inicio">
-            <div class="contenedor">
+            <div class="contenedor cont-inicio">
                 <div class="parrafo">
                     <h1 class="titulo">Bienvenidos</h1>
                     <p class="textos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, placeat. Voluptas alias tempore porro, sunt possimus eos nesciunt numquam reiciendis ut perspiciatis, corporis vero omnis ullam optio, illo eveniet in.</p>
+                    <a class="button" href="#">Aprender ahora</a>
                 </div>
                 <img src="img/nerd.png" alt="Inicio" class="img">
             </div>
         </section>
 
         <section id="nosotros">
-            <div class="contenedor">
+            <div class="contenedor vh-100 cont-nosotros" >
+                <img class="texto" src="img/about.png" alt="about">
                 <div class="parrafo">
-                    <h1 class="titulo">Bienvenidos</h1>
+                    <h1 class="titulo">Nosotros</h1>
+                    <p class="textos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, placeat. Voluptas alias tempore porro, sunt possimus eos nesciunt numquam reiciendis ut perspiciatis, corporis vero omnis ullam optio, illo eveniet in.
+                        <br><br>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, placeat. Voluptas alias tempore porro, sunt possimus eos nesciunt numquam reiciendis ut perspiciatis, corporis vero omnis ullam optio, illo eveniet in.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios">
+            <div class="contenedor vh-100 cont-servicios">
+                <div class="parrafo">
+                    <h2 class="titulo">Servicios</h2>
+                    <p class="textos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, placeat. Voluptas alias tempore porro, sunt possimus eos nesciunt numquam reiciendis ut perspiciatis, corporis vero omnis ullam optio, illo eveniet in.</p>
+                    <div class="cards">
+                        <div class="card__item">
+                            <h3 class="card__plan">GIT</h3>
+                            <h3 class="card__precio">BASICO</h3>
+                            <P class="card__caracteristica" >Hasta 30 personas por curso</P>
+                            <P class="card__caracteristica">Caracteristica 1</P>
+                            <P class="card__caracteristica">Caracteristica 2</P>
+                            <P class="card__caracteristica">Caracteristica 3</P>
+                            <a class="button espacio" href="#">Aprender ahora</a>
+                        </div>
+                        <div class="card__item card__item--activo">
+                            <h3 class="card__plan">GIT</h3>
+                        <h3 class="card__precio">BASICO</h3>
+                        <P class="card__caracteristica" >Hasta 30 personas por curso</P>
+                        <P class="card__caracteristica">Caracteristica 1</P>
+                        <P class="card__caracteristica">Caracteristica 2</P>
+                        <P class="card__caracteristica">Caracteristica 3</P>
+                        <P class="card__caracteristica">Caracteristica 4</P>
+                        <P class="card__caracteristica">Caracteristica 5</P>
+                        <a class="button button--negro" href="#">Aprender ahora</a>
+                        <P></P>
+                    </div>
+
+                    <div class="card__item ">
+                        <h3 class="card__plan">GIT</h3>
+                        <h3 class="card__precio">BASICO</h3>
+                        <P class="card__caracteristica" >Hasta 30 personas por curso</P>
+                        <P class="card__caracteristica">Caracteristica 1</P>
+                        <P class="card__caracteristica">Caracteristica 2</P>
+                        <P class="card__caracteristica">Caracteristica 3</P>
+                        <a class="button" href="#">Aprender ahora</a>
+                        <P></P>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="galeria">
+            <div class="contenedor vh-100 cont-galeria">
+                <div class="parrafo">
+                    <h1 class="titulo center">Galeria</h1>
                     <p class="textos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, placeat. Voluptas alias tempore porro, sunt possimus eos nesciunt numquam reiciendis ut perspiciatis, corporis vero omnis ullam optio, illo eveniet in.</p>
                 </div>
-                <img src="img/nerd.png" alt="Inicio" class="img">
+
+                <div class="galeria">
+                    <img src="img/uno.jpg" class="img" alt="img1">
+                    <img src="img/dos.jpg" class="img" alt="img2">
+                    <img src="img/tres.jpg" class="img" alt="img3">
+                    <img src="img/cuatro.jpg" class="img" alt="img4">
+                    <img src="img/cinco.jpg" class="img" alt="img5">
+                    <img src="img/seis.jpg" class="img" alt="img6">
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="contenedor vh-100 cont-contacto">
+                <div class="parrafo">
+                    <h1 class="titulo center">Contacto</h1>
+                    <p class="textos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, placeat. Voluptas alias tempore porro, sunt possimus eos nesciunt numquam reiciendis ut perspiciatis, corporis vero omnis ullam optio, illo eveniet in.</p>
+                </div>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="Nombre" class="textos" >Nombre</label>
+                        <input class="input" id="Nombre" type="text">
+                    </div> 
+                    <div class="form-group">
+                        <label for="telefono" class="textos">telefono</label>
+                        <input class="input" type="text" id="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="textos">email</label>
+                        <input class="input" type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje" class="textos">mensaje</label>
+                        <textarea class="input" name="mensaje" id="mensaje" cols="12" rows="12"></textarea>
+                    </div>
+                    <button type="button" class="button button-form">Enviar</button>
+                </form>
+    
             </div>
         </section>
     </div>
