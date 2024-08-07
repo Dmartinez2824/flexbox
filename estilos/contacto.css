@@ -1,0 +1,31 @@
+/**---------------------CONTACTO-------------------**/
+
+.cont-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.form{
+    width: 30%;
+}
+
+.input{
+width: 100%;
+text-decoration: none;
+border-radius: 10px;
+padding-top: 15px;
+margin: 10px 0px;
+}
+
+.button-form{
+    padding: 10px 100px;
+}
+
+.button-form:hover{
+    padding: 10px 80px;
+
+}
+.input:focus{
+    border: none;
+}

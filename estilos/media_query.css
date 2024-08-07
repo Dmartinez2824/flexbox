@@ -1,0 +1,70 @@
+
+
+/**---------------MEDIA QUERY---------------**/
+
+@media (max-width:800px) {
+    .principal {
+      flex-direction: column;
+    }
+  
+    .titulo {
+      order: 1;
+    }
+    .ilustracion {
+      order: 3;
+    }
+    .contenedor-texto {
+      order: 2;
+    }
+  
+  /* ------------------Nosotros------------------- */
+  .contenedor-nosotros {
+    flex-direction: column;
+    margin-top: 70px;
+  }
+  
+  .imagen-nosotros {
+    order: 2;
+  }
+  
+  .contenedor-texto {
+    order: 1;
+    margin-top: 100px;
+  }
+  /* ------------------Servicios------------------- */
+    .servicios {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card__item {
+      width: 300px; /* Ajusta el ancho de las tarjetas en pantallas pequeñas */
+      max-width: 1000px; /* Limita el ancho máximo de las tarjetas */
+      margin: 50px;
+      margin-bottom: -5px;
+    }
+  
+  /* ------------------Galería------------------- */
+  #galeria {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  
+  
+  .img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+  
+  
+  
+  
+  /* ------------------Contacto------------------- */
+  
+  #contacto {
+    margin-top: 1120px;
+  }
+  
+  }

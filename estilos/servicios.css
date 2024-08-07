@@ -1,0 +1,46 @@
+/**-----------------servicios----------------**/
+.cont-servicios{
+    padding-top: 20px;   
+   }
+    #servicios .parrafo{
+       text-align: center;
+       padding-top: 20px;
+       
+   }
+   .cards{
+       padding-top: 20px;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+   }
+   .espacio{
+       position: static;
+   }
+   
+   .card__item{
+   max-width: 350px;
+   background: var(--white-color);
+   border-radius: 10px;
+   text-align: center;
+   color: var(--second-color);
+   padding: 40px 50px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+   }
+   .card__item--activo{
+       background-color: var(--main-color);
+   } 
+   
+   .card__plan{
+       color: var(--second-color);
+       margin-bottom: 20px;
+   }
+   
+   .card__precio{
+   font-size: 2rem;
+   color: var(--second-color);
+   }
+   
+   .card__caracteristica{
+       padding-bottom: 20px;
+   }
+   
