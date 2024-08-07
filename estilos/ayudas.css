@@ -1,0 +1,41 @@
+.textos,    
+.titulo{
+    color: var(--white-color);
+    line-height: 25px;
+}
+.center{
+    text-align: center;
+}
+.titulo{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.textos{
+    font-size: 1rem;
+    margin-bottom:50px ;
+}
+.button{
+    
+    text-decoration: none;
+    color: var(--second-color);
+    background-color: var(--main-color);
+    border-radius: 30px;
+    padding: 10px;
+    transition: all 500ms;
+}
+
+.button--negro{
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+
+.button:hover{
+    padding: 17px;
+    font-weight: bolder;
+    
+}
+
+.vh-100{
+    height:calc(100vh + 75px);
+}
+
