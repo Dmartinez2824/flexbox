@@ -1,4 +1,4 @@
-alert("bienvenidos aa mi pag")
+
 const link = document.querySelectorAll(".links");
 const input = document.querySelector(".nav__input");
 

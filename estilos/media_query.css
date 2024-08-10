@@ -1,70 +1,80 @@
+@media (max-width: 800px){
+    /**---------header-------**/
 
-
-/**---------------MEDIA QUERY---------------**/
-
-@media (max-width:800px) {
-    .principal {
-      flex-direction: column;
+    /**---------inicio-------**/
+    .titulo{
+        text-align: center;
     }
-  
-    .titulo {
-      order: 1;
+    .contenedor{
+        flex-direction: column;
+        margin: 0 50px;
     }
-    .ilustracion {
-      order: 3;
-    }
-    .contenedor-texto {
-      order: 2;
-    }
-  
-  /* ------------------Nosotros------------------- */
-  .contenedor-nosotros {
-    flex-direction: column;
-    margin-top: 70px;
-  }
-  
-  .imagen-nosotros {
-    order: 2;
-  }
-  
-  .contenedor-texto {
-    order: 1;
-    margin-top: 100px;
-  }
-  /* ------------------Servicios------------------- */
-    .servicios {
-      flex-direction: column;
-      align-items: center;
-    }
+    .cont-inicio{
+        padding-top: 30px;
     
-    .card__item {
-      width: 300px; /* Ajusta el ancho de las tarjetas en pantallas pequeñas */
-      max-width: 1000px; /* Limita el ancho máximo de las tarjetas */
-      margin: 50px;
-      margin-bottom: -5px;
+        height:calc(140vh - var(--nav-height)  );
     }
-  
-  /* ------------------Galería------------------- */
-  #galeria {
-    flex-direction: column;
-    margin-top: 50px;
-  }
-  
-  
-  .img {
-    width: 100%;
-    height: 250px;
-    border-radius: 5px;
-    margin-bottom: 30px;
-  }
-  
-  
-  
-  
-  /* ------------------Contacto------------------- */
-  
-  #contacto {
-    margin-top: 1120px;
-  }
-  
-  }
+    .parrafo-inicio {
+        text-align: center;
+    }
+
+    
+    .img1,.img2{
+        height: 300px;
+        margin-top: -75px;
+    }
+    /**---------nosotros-------**/
+    .cont-nosotros{
+        height:auto;
+    }
+    .img2{
+        order: 2;
+    }
+    .par-nosotros{
+        order: 1;
+    }
+    /**---------servicios-------**/
+    .cont-servicios{
+       height:auto;
+    }
+    #servicios .parrafo{
+        text-align: left;
+    }
+    .cards{
+        flex-direction: column;
+        gap: 10px;
+    }
+    /**---------galeria-------**/
+    .galeria{
+        height: auto;
+        margin: 10px;
+        width: 100%;   
+        flex-direction:column;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+    #galeria .img{
+        height: auto;
+        width: 100%;
+    }
+        
+    /**---------contacto-------**/
+    .cont-contacto{
+        height: auto;
+    }
+    #contacto .titulo{
+        padding: 0;
+    }
+    #contacto .form{
+        width: 100%;
+    }
+    .button-form{
+        font-family: "Montserrat", sans-serif;
+    }
+    .input:focus{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        
+    }   
+
+}
