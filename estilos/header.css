@@ -80,12 +80,12 @@
     display: flex;
     justify-content: space-between;
     --transform-menu-show: translate(-100%);
-    --icon-togle-menu: url(../assets/img/icons/menu.svg);
+    --icon-toggle-menu: url(../assets/img/icons/menu.svg);
 }
 
 .contenedor-nav:has(.nav__input:checked) {
     --transform-menu-show: translate(0);
-    --icon-togle-menu: url(../assets/img/icons/cerrar.svg);
+    --icon-toggle-menu: url(../assets/img/icons/cerrar.svg);
   }
 
   @media (width > 800px) {
@@ -96,6 +96,7 @@
 
     .nav__toggle {
         display:block;
+        
     }
     .nav__list {
         position: static;
