@@ -273,12 +273,13 @@ margin: 10px 0px;
         height: auto;
         margin: 10px;
         width: 100%;   
-        flex-direction:row;
+        flex-direction:column;
         margin-bottom: 50px;
         justify-content: center;
     }
     #galeria .img{
         height: auto;
+        width: 100%;
     }
         
     /**---------contacto-------**/
