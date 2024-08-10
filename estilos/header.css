@@ -7,56 +7,55 @@
     position: sticky;
     top: 0;
 }
-
+.contenedor-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--nav-height);
+}
 .enlaces{
     padding: 20px;
+}
+
+.contenedor-nav:has(.nav__input:checked) {
+    --transform-menu-show: translate(0);
+    --icon-toggle-menu: url(../assets/icons/cerrar.svg);
+  }
+.logo{
+    margin-left: 50px;
+}
+.nav__figure{
     
 }
+
+
+.menu{
+cursor:pointer;
+display: none;
+}
+.nav__toggle{
+}
+
+.nav__input{
+    display: none;
+}
+
+.nav__list{
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    margin-right: 50px;
+    transition: all 0.5s;
+    top: var(--nav-heigt);
+}
+
 .links{
     display: inline-block;
     margin: 0 5px;
     text-decoration: none;
     color: var(--second-color);
     font-weight: bold;
-    margin-top: 5px; 
-}
-
-.logo{
-
-}
-.nav__figure{
-
-}
-
-
-
-.nav__toggle{
-    height: 60px;
-    width: 60px;
-    background-image: var(--icon-togle-menu);
-    background-size: cover;
-    cursor: pointer;
-    transition: all 0.5s;
-}
-
-.nav__input{
-     display: none;
-}
-
-.nav__list{
-    display: flex;
-  list-style-type: none;
-  flex-direction: column;
-  background-color: var(--secod-color);
-  position: fixed;
-  inset: 0;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  text-align: center;
-  transition: all 0.5s;
-  top: var(--nav-heigt);
-  transform: var(--transform-menu-show);
+    margin-top: 5px;
 }
 
 .nav__item{
@@ -64,48 +63,13 @@
 }
 
 
-.links{
-    text-decoration: none;
-    color: var(--main-color);
-    font-weight: 700;
-    font-size: 1rem;
-    text-decoration: none;
-    color: inherit;
-    font-weight: 700;
-    margin-right: 20px;
-}
 
-.contenedor-nav{
+  @media (width < 800px) {
+   .nav__list{
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    display: flex;
-    justify-content: space-between;
-    --transform-menu-show: translate(-100%);
-    --icon-toggle-menu: url(../assets/img/icons/menu.svg);
+    gap: 2rem;
+    
+  }
 }
-
-.contenedor-nav:has(.nav__input:checked) {
-    --transform-menu-show: translate(0);
-    --icon-toggle-menu: url(../assets/img/icons/cerrar.svg);
-  }
-
-  @media (width > 800px) {
-    .contenedor-nav{
-        display: flex;
-      --transform-menu-show: translate(0);
-    }
-
-    .nav__toggle {
-        display:block;
-        
-    }
-    .nav__list {
-        position: static;
-        flex-direction: row;
-        background-color: var(--main-color);
-      }
-
-      .links{
-        color: var(--secod-color);
-      }
-
-  }
