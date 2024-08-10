@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     height: var(--nav-height);
+    --menu-icon:
 }
 .enlaces{
     padding: 20px;
@@ -24,17 +25,14 @@
 .logo{
     margin-left: 50px;
 }
-.nav__figure{
-    
-}
+
 
 
 .menu{
 cursor:pointer;
-display: none;
+/* display: none; */
 }
-.nav__toggle{
-}
+
 
 .nav__input{
     display: none;
@@ -58,18 +56,58 @@ display: none;
     margin-top: 5px;
 }
 
-.nav__item{
 
-}
 
 
 
   @media (width < 800px) {
-   .nav__list{
+    .contenedor-nav{
+        height: var(--nav-height);
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    
+    .nav__toggle{
+        margin-right: 50px;
+    }
+    .enlaces{
+        width: 100%;
+    }
+    
+    
+    .nav__list{
+    width: 100%;
+    background: var(--main-color);
+    opacity: 0.8;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    height: 0;
+    overflow: hidden;
     
+    
+}
+
+.nav__input:checked + .nav__list{
+
+        height: calc(100vh - var(--nav-height)); 
+        
+}
+
+.contenedor-nav:has(.nav__input:checked) {
+    --transform-menu-show: translate(0);
+    --icon-toggle-menu: url(../assets/icons/cerrar.svg);
   }
+}
+
+@media (width >= 800px){
+
+    .menu{
+        display: none;
+     }
+
 }
