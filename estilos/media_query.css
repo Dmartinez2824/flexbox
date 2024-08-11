@@ -11,6 +11,8 @@
         padding-top: var(--padding-top);
     }
     .cont-inicio{
+        padding-top: 130px;
+        margin-top: -40px;
         justify-content: center;
         
     }
