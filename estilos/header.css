@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
     height: var(--nav-height);
-    --menu-icon:
+    --icon-toggle-menu: url(../icons/menu.svg);
 }
 .enlaces{
     padding: 20px;
@@ -20,13 +20,18 @@
 
 .contenedor-nav:has(.nav__input:checked) {
     --transform-menu-show: translate(0);
-    --icon-toggle-menu: url(../assets/icons/cerrar.svg);
+    --icon-toggle-menu: url(../icons/cerrar.svg);
   }
 .logo{
     margin-left: 50px;
 }
 
-
+.nav__toggle{
+    height: 30px;
+    width: 30px;
+    background-image: var(--icon-toggle-menu);
+    cursor: pointer;
+}
 
 .menu{
 cursor:pointer;
@@ -45,6 +50,7 @@ cursor:pointer;
     margin-right: 50px;
     transition: all 0.5s;
     top: var(--nav-heigt);
+    transform: var(--transform-menu-show);
 }
 
 .links{
@@ -65,7 +71,6 @@ cursor:pointer;
         height: var(--nav-height);
         flex-wrap: wrap;
         justify-content: space-between;
-        
     }
     
     .nav__toggle{
@@ -78,8 +83,8 @@ cursor:pointer;
     
     .nav__list{
     width: 100%;
-    background: var(--main-color);
-    opacity: 0.8;
+    background: var(--white-color);
+    opacity: 0.9;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -95,19 +100,20 @@ cursor:pointer;
 .nav__input:checked + .nav__list{
 
         height: calc(100vh - var(--nav-height)); 
+
         
 }
 
 .contenedor-nav:has(.nav__input:checked) {
     --transform-menu-show: translate(0);
-    --icon-toggle-menu: url(../assets/icons/cerrar.svg);
+
   }
 }
 
 @media (width >= 800px){
 
-    .menu{
+    .nav__toggle {
         display: none;
-     }
+    }
 
 }

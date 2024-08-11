@@ -8,11 +8,11 @@
     .contenedor{
         flex-direction: column;
         margin: 0 50px;
+        padding-top: var(--padding-top);
     }
     .cont-inicio{
-        padding-top: 30px;
-    
-        height:calc(140vh - var(--nav-height)  );
+        justify-content: center;
+        
     }
     .parrafo-inicio {
         text-align: center;
@@ -21,11 +21,11 @@
     
     .img1,.img2{
         height: 300px;
-        margin-top: -75px;
     }
     /**---------nosotros-------**/
     .cont-nosotros{
         height:auto;
+      
     }
     .img2{
         order: 2;
@@ -43,19 +43,27 @@
     .cards{
         flex-direction: column;
         gap: 10px;
+       justify-content: center;
+    }
+    .button--negro{
+        padding: 5px;
+    }
+    .button--serv{
+        padding: 5px;
     }
     /**---------galeria-------**/
     .galeria{
         height: auto;
-        margin: 10px;
+        margin: 10px 0;
         width: 100%;   
-        flex-direction:column;
+        flex-direction:row;
         margin-bottom: 50px;
         justify-content: center;
     }
     #galeria .img{
         height: auto;
-        width: 100%;
+        width: 48%;
+        align-items: center;
     }
         
     /**---------contacto-------**/
@@ -74,7 +82,6 @@
     .input:focus{
         text-align: center;
         font-family: "Montserrat", sans-serif;
-        
     }   
 
 }
